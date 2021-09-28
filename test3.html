@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+</head>
+    <script>
+        $(function(){
+            $("#sel").change(function(){
+                s = $(this).val();
+                if(s == 1)
+                    $("#img").attr("src","https://placeimg.com/100/100/any")
+                else if(s == 2)
+                    $("#img").attr("src","https://placeimg.com/200/200/any")
+                else if(s == 3)
+                    $("#img").attr("src","https://placeimg.com/300/300/any")
+            })
+        })
+
+    </script>
+<body>
+    <select id="sel">
+        <option>선택</option>
+        <option value=1>그림1</option>
+        <option value=2>그림2</option>
+        <option value=3>그림3</option>
+    </select><br>
+    <img id="img" src="https://placeimg.com/200/200/any">
+
+</body>
+</html>

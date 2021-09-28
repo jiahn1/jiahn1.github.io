@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.js"></script>
+    <title>Document</title>
+    <script>
+         $(function(){
+             $(document).mousemove(function(e){
+                $("#x").text(e.pageX);
+                $("#y").text(e.pageY);
+             })
+             $(document).click(function(e){
+                if(e.pageX == 100 && e.pageY==100){
+                    alert("Find");
+                }
+             })
+         })
+    </script>
+</head>
+<body>
+    키워드<input type=text><button>본문검색</button>
+    <table>
+        <tr>
+            <td>1,</td><td>게시판글테스트1,</td><td>작성자1</td>
+        </tr>
+        <tr>
+            <td>2,</td><td>게시판글테스트2,</td><td>작성자2</td>
+        </tr>
+        <tr>
+            <td>3,</td><td>게시판글테스트3,</td><td>작성자3</td>
+        </tr>
+        <tr>
+            <td>4,</td><td>게시판글테스트4,</td><td>작성자4</td>
+        </tr>
+    </table>
+</body>
+</html>
